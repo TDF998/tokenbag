@@ -316,8 +316,8 @@
         /* 安全说明区块 */
         .security {
             background: #F1F5F9;
-            border-radius: 48px;
-            padding: 48px 40px;
+            border-radius:24px;
+            padding:24px;
             margin: 40px 0;
         }
         .security h3 {
@@ -330,6 +330,227 @@
             gap: 24px;
             flex-wrap: wrap;
             margin-top: 28px;
+        }
+
+    /* 安全区块增强 */
+        .security {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(30, 42, 58, 0.08);
+            box-shadow: 
+                0 25px 50px -12px rgba(0, 0, 0, 0.1),
+                0 0 0 1px rgba(30, 42, 58, 0.02) inset;
+            transition: all 0.2s ease;
+        }
+        
+        /* 安全区块标题行 */
+        .security-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 2.2rem;
+            border-bottom: 2px solid rgba(30, 42, 58, 0.08);
+            padding-bottom: 1.5rem;
+        }
+        
+        .security-header i {
+            font-size: 1.8rem;
+            color: #4F46E5;
+            background: #EEF2FF;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 18px;
+            backdrop-filter: blur(4px);
+            box-shadow: 0 6px 12px -6px rgba(0, 0, 0, 0.1);
+        
+        }
+        
+        .security-header h3 {
+            font-size: 1.9rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            color: #0f1a26;
+            margin: 0;
+        }
+        
+        /* 接入模式网格布局 */
+        .mode-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(1198px, 1fr));
+            gap: 1.2rem;
+            margin: 2rem 0 1.5rem;
+        }
+        
+        /* 模式卡片 */
+        .mode-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 1.4rem 1.3rem 1.5rem 1.3rem;
+            box-shadow: 0 8px 18px -6px rgba(0, 20, 40, 0.06), 0 0 0 1px rgba(0, 0, 0, 0.02);
+            border: 1px solid rgba(30, 42, 58, 0.06);
+            transition: transform 0.2s, box-shadow 0.25s, border-color 0.2s;
+            display: flex;
+            flex-direction: column;
+            backdrop-filter: blur(4px);
+        }
+        
+        .mode-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 20px 28px -10px rgba(18, 35, 60, 0.12), 0 0 0 1px rgba(30, 42, 58, 0.1);
+            border-color: rgba(30, 42, 58, 0.12);
+        }
+        
+        /* 卡片头部 */
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 0.9rem;
+        }
+        
+        .card-header .emoji-badge {
+            font-size: 1.6rem;
+            line-height: 1;
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.02));
+        }
+        
+        .card-header h4 {
+            font-size: 1.2rem;
+            font-weight: 650;
+            letter-spacing: -0.3px;
+            color: #1E2A3A;
+            margin: 0;
+            border-left: 3px solid #4F46E5;
+            padding-left: 10px;
+        }
+        
+        /* 卡片描述文字 */
+        .mode-desc {
+            color: #3a4a5c;
+            font-size: 0.92rem;
+            line-height: 1.5;
+            margin-bottom: 0.8rem;
+            font-weight: 400;
+            flex: 1;
+        }
+        
+        /* 卡片底部标签 */
+        .mode-meta {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #56748c;
+            font-size: 0.8rem;
+            font-weight: 450;
+            border-top: 1px dashed rgba(30, 42, 58, 0.1);
+            padding-top: 0.9rem;
+        }
+        
+        .mode-meta i {
+            width: 16px;
+            color: #4F46E5;
+            opacity: 0.7;
+            font-size: 0.85rem;
+        }
+        
+        /* 管控模式卡片特殊微强调 */
+        .mode-card.featured {
+            background: linear-gradient(145deg, #ffffff, #f8fbff);
+            border-left: 3px solid #4F46E5;
+        }
+        
+        /* 安全标识行增强 */
+        .security-badge {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem 2rem;
+            margin-top: 1.2rem;
+            padding-top: 1.2rem;
+            border-top: 2px solid rgba(30, 42, 58, 0.06);
+        }
+        
+        .security-badge span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.9rem;
+            font-weight: 470;
+            color: #1e3a4d;
+            background: rgba(30, 42, 58, 0.025);
+            padding: 0.35rem 1rem 0.35rem 0.8rem;
+            border-radius: 40px;
+            backdrop-filter: blur(4px);
+            border: 0.5px solid rgba(30, 42, 58, 0.05);
+            transition: background 0.15s;
+        }
+        
+        .security-badge span i {
+            font-size: 1.1rem;
+            color: #4F46E5;
+            opacity: 0.8;
+        }
+        
+        .security-badge span:hover {
+            background: rgba(30, 42, 58, 0.06);
+        }
+        
+        /* 底部信任标语 */
+        .security-footnote {
+            margin-top: 1.2rem;
+            font-size: 0.85rem;
+            color: #486477;
+            opacity: 0.75;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        
+        .security-footnote i {
+            color: #10B981;
+            font-size: 0.9rem;
+        }
+        
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .mode-grid {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .security {
+                padding: 32px 20px;
+                border-radius: 32px;
+            }
+            
+            .security-header h3 {
+                font-size: 1.5rem;
+            }
+            
+            .security-badge {
+                gap: 0.8rem;
+            }
+            
+            .security-badge span {
+                padding: 0.3rem 0.9rem;
+                font-size: 0.85rem;
+            }
+        }
+        
+        /* 小屏幕进一步优化 */
+        @media (max-width: 480px) {
+            .mode-card {
+                padding: 1.2rem 1rem;
+            }
+            
+            .card-header h4 {
+                font-size: 1.1rem;
+            }
         }
 
         /* 定价表格 */
@@ -510,16 +731,101 @@
     <!-- 安全说明：消除顾虑 -->
     <div class="container">
         <div class="security">
-            <i class="fas fa-shield-hooded" style="font-size:2.2rem; color:#1E2A3A;"></i>
+          
+          <!-- 图标+标题 -->
+          <div class="security-header">
+            <i class="fas fa-user-lock " style="font-size:1.8rem;"></i> 
             <h3>我们怎么做到不碰你的数据？</h3>
-            <p style="font-size:1.05rem; max-width:90%;">TokenBag 提供两种接入模式：<strong>监控模式</strong>（只读取 API 调用日志或云厂商账单，不代理请求）和<strong>管控模式</strong>（可选代理，实现配额限流）。所有 API 密钥使用 AES-256 加密存储，仅你可见。支持私有化部署选项。</p>
-            <div class="security-badge">
-                <span><i class="fas fa-lock"></i> 企业级加密</span>
-                <span><i class="fas fa-database"></i> 数据本地化可选</span>
-                <span><i class="fas fa-file-signature"></i> SOC2 合规预备</span>
+          </div>
+      
+          <!-- 五种模式网格 -->
+          <div class="mode-grid">
+            
+            <!-- 1. 监控模式 -->
+            <div class="mode-card">
+              <div class="card-header">
+                <span class="emoji-badge">🤝</span>
+                <h4>监控模式</h4>
+              </div>
+              <div class="mode-desc">
+                只读取云厂商API调用日志或账单数据，无需改造现有代码即可接入。适合仅需成本观测和用量分析、对请求延迟零容忍的企业，实现真正的"零侵入"可观测性。
+              </div>
+              <div class="mode-meta">
+                <i class="fas fa-eye"></i> <span>零侵入 · 纯观测</span>
+              </div>
             </div>
+            
+            <!-- 2. 管控模式（核心卡片可微强调） -->
+            <div class="mode-card" style="background: linear-gradient(145deg, #ffffff, #fbfdff);">
+              <div class="card-header">
+                <span class="emoji-badge">🤝</span>
+                <h4>管控模式</h4>
+              </div>
+              <div class="mode-desc">
+                轻量级代理接管模型请求，网关层统一配额、限流与超支熔断。主动拦截异常消耗，将成本控制升级为事中管控。所有 API 密钥 AES-256 加密存储，仅你可见，支持私有化部署。
+              </div>
+              <div class="mode-meta">
+                <i class="fas fa-key"></i> <span>加密 · 私有部署</span>
+              </div>
+            </div>
+            
+            <!-- 3. 无密钥模式 -->
+            <div class="mode-card">
+              <div class="card-header">
+                <span class="emoji-badge">🤝</span>
+                <h4>无密钥模式</h4>
+              </div>
+              <div class="mode-desc">
+                客户端应用不持有任何长期静态API密钥，运行时动态申请时效性Token完成身份认证。下游模型厂商的真实密钥由平台集中托管，凭据泄露风险降至最低。
+              </div>
+              <div class="mode-meta">
+                <i class="fas fa-clock"></i> <span>动态Token · 零静态凭据</span>
+              </div>
+            </div>
+            
+            <!-- 4. 边车模式 -->
+            <div class="mode-card">
+              <div class="card-header">
+                <span class="emoji-badge">🤝</span>
+                <h4>边车模式</h4>
+              </div>
+              <div class="mode-desc">
+                TokenBag以轻量级Sidecar容器形态与应用Pod一对一部署，所有模型调用经由localhost转发。请求流量完全不出企业自有VPC，数据平面实现彻底的私有化隔离。
+              </div>
+              <div class="mode-meta">
+                <i class="fas fa-cube"></i> <span>Sidecar · VPC内闭环</span>
+              </div>
+            </div>
+            
+            <!-- 5. 透明网关模式 -->
+            <div class="mode-card">
+              <div class="card-header">
+                <span class="emoji-badge">🤝</span>
+                <h4>透明网关模式</h4>
+              </div>
+              <div class="mode-desc">
+                在代理模型请求的同时，集成敏感信息自动检测、提示注入防御与危险操作拦截能力。将安全防护与成本管理融合于同一运行时层，一站式守护AI调用安全。
+              </div>
+              <div class="mode-meta">
+                <i class="fas fa-shield-virus"></i> <span>检测·拦截·防护</span>
+              </div>
+            </div>
+          </div>
+      
+          <!-- 安全认证徽章 (原样内容，优化显示) -->
+          <div class="security-badge">
+            <span><i class="fas fa-lock"></i> 企业级加密</span>
+            <span><i class="fas fa-database"></i> 数据本地化可选</span>
+            <span><i class="fas fa-file-signature"></i> SOC2 合规预备</span>
+          </div>
+          
+          <!-- 可添加一句低调备注，但保留干净风格 -->
+          <div style="margin-top: 1.2rem; font-size: 0.9rem; color: #486477; opacity: 0.7; display: flex; align-items: center; gap: 6px;">
+            <i class="fas fa-circle-check" style="font-size: 1rem;"></i> 
+            <span>密钥永不落地 · 你的数据主权，始终归你</span>
+          </div>
         </div>
-    </div>
+      </div>
 
     <!-- 定价区简洁三档 -->
     <div class="container section">
