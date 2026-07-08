@@ -167,19 +167,40 @@
             align-items: center;
         }
         .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
             font-size: 1.8rem;
             font-weight: 800;
             letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #1E2A3A 0%, #2D3A4B 100%);
+            background: linear-gradient(135deg, rgb(30, 42, 58) 0%, #2D3A4B 100%);
             -webkit-background-clip: text;
             background-clip: text;
             color: transparent;
         }
 
         .logo span {
-            color: #4F46E5;
+            color: #4f46e5;
             background: none;
             -webkit-background-clip: unset;
+        }
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            /* background: linear-gradient(145deg, #4F46E5, #7C3AED); */
+            background-image: url(./icon/logo01.png);
+            background-repeat: no-repeat;      
+            background-position: center;      
+            background-size: contain; 
+            border-radius: 12px;
+            display: inline-flex;
+            justify-content: center; 
+            font-weight: 800;
+            font-size: 1.5rem;
+            line-height: 34px;
+            color: white;
+            box-shadow: 2px 1px 1px rgba(68, 96, 130 ,0.8);
+
         }
         .nav-links {
             display: flex;
@@ -657,9 +678,11 @@
 <!-- 动态闪烁圆点层 -->
 <div class="dots-overlay" id="dotsOverlay"></div>
 <nav class="navbar">
-    <div class="container nav-content">
-        
-        <div class="logo">TOKEN<span>BAG</span></div>
+    <div class="container nav-content">  
+        div class="logo">
+            <div class="logo-icon"></div>
+                TOKEN<span>BAG</span>
+        </div>
         <div class="nav-links">
             <a href="###">首页</a>
             <a href="###">解决方案</a>
