@@ -977,7 +977,9 @@
         <h2 style="font-size: 1.8rem;">AI 成本计算器</h2>
         <p style="margin: 16px 0; color:#4B5565;">输入当前用量，预估节省空间与优化建议（即将开放完整版）。</p>
         <div style="background:#F9FAFE; border-radius: 24px; padding: 24px; text-align: left; margin: 20px 0;">
-            <div style="display: flex; justify-content: space-between; margin-bottom: 12px;"><span>GPT-4o 月用量(万tokens):</span><input type="number" placeholder="输入/输出合计" id="tokenInput" style="width:140px; padding:8px; border-radius:20px; border:1px solid #E2E8F0;"></div>
+            <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                <span style="height: 50px;line-height: 50px;">GPT-4o 月用量(万tokens):</span>
+                <input type="number" placeholder="输入/输出合计" id="tokenInput" style=" padding:16px; border-radius:20px; border:1px solid #E2E8F0;"></div>
             <div style="display: flex; justify-content: space-between;"><span>预估月成本:</span><strong id="costPreview">$0</strong></div>
             <button id="simulateSaveBtn" class="btn btn-secondary" style="margin-top: 20px; width:100%;">估算节省潜力</button>
             <div id="optimizeTip" style="margin-top: 16px; font-size:0.9rem; color:#2B6E4F; background:#E6F7EC; padding:12px; border-radius: 20px; display: none;"></div>
