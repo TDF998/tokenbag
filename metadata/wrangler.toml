@@ -1,0 +1,17 @@
+name = "a-share-terminal-proxy"
+main = "worker.js"
+compatibility_date = "2024-09-23"
+
+# 此 Worker 仅代理 /api/* 四个端点（基金净值 / 档案 / 自动选基 / 健康探针）。
+# 静态前端仍由 GitHub Pages 提供；前端 js/api.js 里的 STATIC_PROXY_URL 须指向本 Worker 地址。
+#
+# 部署：
+#   npm i -g wrangler
+#   wrangler login
+#   wrangler deploy
+# 部署后把输出的 https://<name>.<sub>.workers.dev 填进 js/api.js 的 STATIC_PROXY_URL。
+
+# 可选：跨 isolate 持久缓存（不绑也能跑，用内存缓存）。
+# [[kv_namespaces]]
+# binding = "CACHE"
+# id = "在此填你的 KV namespace id"

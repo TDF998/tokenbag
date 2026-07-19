@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-07-18T10:16:27Z",
+  "usdCny": 6.7846,
+  "gold": {
+    "intlUsd": 4017.52,
+    "rmbPerG": 876.34,
+    "chg": 0.75
+  },
+  "silver": {
+    "intlUsd": 56.65,
+    "rmbPerG": 12.36,
+    "chg": 0.76
+  },
+  "sourceNote": "snapshot: gold=goldprice.org, silver=APMEX, fx=open.er-api; 将被 GitHub Action(gen_data.py) 每日覆盖"
+}

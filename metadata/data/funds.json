@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-07-18T00:00:00",
+  "note": "种子文件：部署首日前保证 data/funds.json 存在；真实数据由 GitHub Actions 每日生成覆盖。特色3只填写了已知收盘值，其余待刷新。",
+  "funds": {
+    "020639": {
+      "closeNav": 3.2011,
+      "closeChg": -5.89,
+      "closeDate": "2026-07-17",
+      "manager": "吕鑫",
+      "workTime": "2023-06-30",
+      "managerChanged": false,
+      "windows": {
+        "1y": { "sharpe": null, "alpha": null, "beta": null },
+        "6m": { "sharpe": null, "alpha": null, "beta": null },
+        "3m": { "sharpe": null, "alpha": null, "beta": null }
+      }
+    },
+    "018815": {
+      "closeNav": 2.0388,
+      "closeChg": -12.24,
+      "closeDate": "2026-07-17",
+      "manager": "陈颖",
+      "workTime": "2018-05-21",
+      "managerChanged": false,
+      "windows": {
+        "1y": { "sharpe": null, "alpha": null, "beta": null },
+        "6m": { "sharpe": null, "alpha": null, "beta": null },
+        "3m": { "sharpe": null, "alpha": null, "beta": null }
+      }
+    },
+    "018344": {
+      "closeNav": 1.1773,
+      "closeChg": -5.59,
+      "closeDate": "2026-07-17",
+      "manager": "唐屹",
+      "workTime": "2022-03-15",
+      "managerChanged": false,
+      "windows": {
+        "1y": { "sharpe": null, "alpha": null, "beta": null },
+        "6m": { "sharpe": null, "alpha": null, "beta": null },
+        "3m": { "sharpe": null, "alpha": null, "beta": null }
+      }
+    },
+    "161725": {}, "005827": {}, "003095": {}, "320007": {}, "002190": {},
+    "008086": {}, "161005": {}, "163417": {}, "110022": {}, "005669": {},
+    "000051": {}, "160119": {}, "110026": {}, "160213": {}, "000307": {}, "217022": {}
+  }
+}
