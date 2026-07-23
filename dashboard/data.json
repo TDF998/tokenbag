@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-23T09:59:45+08:00",
+  "updatedAt": "2026-07-23T10:15:21+08:00",
   "marketMood": "2026-07-23 早盘(09:30 开盘实时)：科技三件套开盘窄幅震荡——半导体(cs931743 -0.90%)、机器人(H30590 -0.59%)、国证算力(+1.56%)、科创50(-0.60%)；对冲三角逆势/平稳（对冲属性验证）——黄金(518880 +0.15%)、利率债(511090 +0.25%)、红利低波(512890 -0.34%)；黄金矿股(517520 -0.32%)。联接基金净值(T+1)校正至 07-22 官方真值（020639=3.4167/-1.56%、018815=2.0893/-3.72%、018344=1.1692/-1.52%、000216=3.1127/+1.38% 等）。",
   "funds": [
     {
@@ -20,14 +20,17 @@
       "indexWeek": -0.5,
       "indexStatus": "盘中实时 09:44",
       "buyIn": {
+        "date": "2026-06之前(待确认)",
         "nav": 2.0,
-        "date": "2026-06之前(估算·待确认)"
+        "trackCode": "cs931743",
+        "trackValue": null
       },
       "redemption": {
-        "estNavNow": 3.3859,
-        "lossPct": 69.3,
-        "level": "safe",
-        "msg": "安全（实时估 3.3859，较成本 +69.30%）"
+        "trackNow": null,
+        "trackBuy": null,
+        "lossPct": null,
+        "level": "pending",
+        "basis": "待确认买入日跟踪值"
       }
     },
     {
@@ -48,14 +51,17 @@
       "indexWeek": -3.47,
       "indexStatus": "盘中实时 09:44",
       "buyIn": {
+        "date": "2026-07-21",
         "nav": 2.17,
-        "date": "2026-07-21"
+        "trackCode": "sz399363",
+        "trackValue": 13747.74
       },
       "redemption": {
-        "estNavNow": 2.1219,
-        "lossPct": -2.22,
+        "trackNow": 13429.54,
+        "trackBuy": 13747.74,
+        "lossPct": -2.31,
         "level": "alert",
-        "msg": "⚠️ 已跌回/跌破买入点（实时估 2.1219 ≤ 成本 2.17），建议赎回"
+        "basis": "实时跟踪值 vs 买入日跟踪值"
       }
     },
     {
@@ -76,14 +82,17 @@
       "indexWeek": -7.21,
       "indexStatus": "盘中实时 09:44",
       "buyIn": {
+        "date": "2026-07-20",
         "nav": 1.1872,
-        "date": "2026-07-20"
+        "trackCode": "csH30590",
+        "trackValue": 1752.57
       },
       "redemption": {
-        "estNavNow": 1.1623,
-        "lossPct": -2.1,
-        "level": "alert",
-        "msg": "⚠️ 已跌回/跌破买入点（实时估 1.1623 ≤ 成本 1.1872），建议赎回"
+        "trackNow": 1789.0,
+        "trackBuy": 1752.57,
+        "lossPct": 2.08,
+        "level": "near",
+        "basis": "实时跟踪值 vs 买入日跟踪值"
       }
     },
     {
@@ -104,14 +113,17 @@
       "indexWeek": 3.54,
       "indexStatus": "盘中实时 09:44",
       "buyIn": {
+        "date": "2026-07-22",
         "nav": 3.0702,
-        "date": "2026-07-22"
+        "trackCode": "sh518880",
+        "trackValue": 8.56
       },
       "redemption": {
-        "estNavNow": 3.1174,
-        "lossPct": 1.54,
-        "level": "near",
-        "msg": "逼近买入点（实时估 3.1174，较成本 +1.54%），关注"
+        "trackNow": 8.547,
+        "trackBuy": 8.56,
+        "lossPct": -0.15,
+        "level": "alert",
+        "basis": "实时跟踪值 vs 买入日跟踪值"
       }
     },
     {
@@ -132,14 +144,17 @@
       "indexWeek": 0.78,
       "indexStatus": "盘中实时 09:44",
       "buyIn": {
+        "date": "2026-07-22",
         "nav": 1.1514,
-        "date": "2026-07-22"
+        "trackCode": "sh511090",
+        "trackValue": 117.046
       },
       "redemption": {
-        "estNavNow": 1.1555,
-        "lossPct": 0.35,
+        "trackNow": 117.343,
+        "trackBuy": 117.046,
+        "lossPct": 0.25,
         "level": "near",
-        "msg": "逼近买入点（实时估 1.1555，较成本 +0.35%），关注"
+        "basis": "实时跟踪值 vs 买入日跟踪值"
       }
     },
     {
@@ -160,14 +175,17 @@
       "indexWeek": 1.13,
       "indexStatus": "盘中实时 09:44",
       "buyIn": {
+        "date": "2026-07-22",
         "nav": 1.6046,
-        "date": "2026-07-22"
+        "trackCode": "sh512890",
+        "trackValue": 1.168
       },
       "redemption": {
-        "estNavNow": 1.6089,
-        "lossPct": 0.27,
-        "level": "near",
-        "msg": "逼近买入点（实时估 1.6089，较成本 +0.27%），关注"
+        "trackNow": 1.168,
+        "trackBuy": 1.168,
+        "lossPct": 0.0,
+        "level": "alert",
+        "basis": "实时跟踪值 vs 买入日跟踪值"
       }
     },
     {
