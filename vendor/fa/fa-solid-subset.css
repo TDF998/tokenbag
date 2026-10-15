@@ -1,0 +1,68 @@
+/*!
+ * Font Awesome 7 Free — solid-only 子集（自托管）
+ * 源: @fortawesome/fontawesome-free@7.3.0
+ * 保留: solid 字体 @font-face + 通用基座样式 + 本页实际引用的 31 个图标类
+ * 剔除: brands / regular / twotone 字体与未引用的图标类
+ * 视觉与 all.min.css 完全一致（同一份 fa-solid-900.woff2 与同一套基座规则）
+ */
+@font-face {
+    font-family: "Font Awesome 7 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url("./fa-solid-900.woff2") format("woff2");
+}
+
+:root,
+:root .fa-solid,
+:root .fas {
+    --fa-style-family-classic: 'Font Awesome 7 Free';
+    --fa-font-solid: 'Font Awesome 7 Free';
+    --fa-font-regular: 'Font Awesome 7 Free';
+    --fa-style: 900;
+}
+
+.fa-solid,
+.fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: var(--fa-display, inline-block);
+    font-family: 'Font Awesome 7 Free';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 900;
+    line-height: 1;
+    text-rendering: auto;
+}
+
+/* ---- 页面实际引用的图标类 ---- */
+.fa-arrow-right:before { content: "\f061"; }
+.fa-balance-scale:before { content: "\f24e"; }
+.fa-bars:before { content: "\f0c9"; }
+.fa-bell:before { content: "\f0f3"; }
+.fa-bullseye:before { content: "\f140"; }
+.fa-calculator:before { content: "\f1ec"; }
+.fa-charging-station:before { content: "\f5ce"; }
+.fa-chart-pie:before { content: "\f1fe"; }
+.fa-chart-simple:before { content: "\f1e0"; }
+.fa-check:before { content: "\f00c"; }
+.fa-check-circle:before { content: "\f058"; }
+.fa-chess-knight:before { content: "\e3f8"; }
+.fa-circle-check:before { content: "\f058"; }
+.fa-clock:before { content: "\f017"; }
+.fa-cube:before { content: "\f1b2"; }
+.fa-database:before { content: "\f1c0"; }
+.fa-eye:before { content: "\f06e"; }
+.fa-file-signature:before { content: "\xf4c5"; }
+.fa-gauge-high:before { content: "\f624"; }
+.fa-key:before { content: "\f084"; }
+.fa-layer-group:before { content: "\f5fd"; }
+.fa-lightbulb:before { content: "\f0eb"; }
+.fa-lock:before { content: "\f023"; }
+.fa-quote-left:before { content: "\f10d"; }
+.fa-rocket:before { content: "\f135"; }
+.fa-shield-alt:before { content: "\f3ed"; }
+.fa-shield-virus:before { content: "\f25c"; }
+.fa-tags:before { content: "\f02b"; }
+.fa-user-lock:before { content: "\f4fc"; }
+.fa-xmark:before { content: "\f00d"; }

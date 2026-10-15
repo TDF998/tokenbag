@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>TokenBag多模型AI用量管理与成本控制平台</title>
-    <!-- Google Fonts & 基础样式优化 -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
-    <!-- Font Awesome 6 (免费图标库) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.3.0/css/all.min.css">
+    <!-- Inter 拉丁字体自托管（可变字体，单文件覆盖 100-900 全字重；不含中文字形，中文走系统回退） -->
+    <link rel="preload" href="vendor/inter/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Font Awesome 7 Free — solid 子集自托管（同一份 fa-solid-900.woff2，视觉与官方全量包一致） -->
+    <link rel="preload" href="vendor/fa/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="vendor/fa/fa-solid-subset.css?v=1">
     <!-- 基础 favicon（深蓝 TB 品牌版；?v=2 用于破浏览器图标缓存） -->
     <link rel="icon" href="icon/favicon.ico?v=2" sizes="any">
     <link rel="icon" type="image/png" href="icon/favicon.png?v=2">
     <!-- 苹果 Touch Icon（Safari/添加到主屏幕） -->
     <link rel="apple-touch-icon" href="icon/favicon.png?v=2">
     <style>
+        /* Inter 自托管（可变字体 100-900，与 Google Fonts 版本同源） */
+        @font-face {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 100 900;
+            font-display: swap;
+            src: url('vendor/inter/inter-latin-var.woff2') format('woff2');
+        }
         * {
             margin: 0;
             padding: 0;
