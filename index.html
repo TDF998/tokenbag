@@ -6,9 +6,9 @@
     <title>TokenBag多模型AI用量管理与成本控制平台</title>
     <!-- Inter 拉丁字体自托管（可变字体，单文件覆盖 100-900 全字重；不含中文字形，中文走系统回退） -->
     <link rel="preload" href="vendor/inter/inter-latin-var.woff2" as="font" type="font/woff2" crossorigin>
-    <!-- Font Awesome 7 Free — solid 子集自托管（同一份 fa-solid-900.woff2，视觉与官方全量包一致） -->
+    <!-- Font Awesome 7 Free — solid 子集自托管（码位与 woff2 同源 7.3.0，v=2 破 CDN 旧缓存） -->
     <link rel="preload" href="vendor/fa/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="vendor/fa/fa-solid-subset.css?v=1">
+    <link rel="stylesheet" href="vendor/fa/fa-solid-subset.css?v=2">
     <!-- 基础 favicon（深蓝 TB 品牌版；?v=2 用于破浏览器图标缓存） -->
     <link rel="icon" href="icon/favicon.ico?v=2" sizes="any">
     <link rel="icon" type="image/png" href="icon/favicon.png?v=2">
@@ -332,6 +332,10 @@
             box-shadow: 0 2px 6px rgba(0,0,0,0.02);
         }
         .feature-item i {
+            /* 图标在浅紫圆角块内水平+垂直居中：inline-block 下 align-content 无效，必须用 flex */
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
             font-size: 1.8rem;
             background: #EEF2FF;
             width: 60px;
@@ -339,7 +343,6 @@
             border-radius: 18px;
             color: #4F46E5;
             margin-bottom: 20px;
-            align-content: center;
         }
         .feature-item h4 {
             font-size: 1.25rem;
@@ -821,7 +824,7 @@
             <!-- 1. 监控模式 -->
             <div class="mode-card">
               <div class="card-header">
-                <span class="emoji-badge"><i class="fa-solid fa-chess-knight"></i></span>
+                <span class="emoji-badge"><i class="fa-solid fa-chart-line"></i></span>
                 <h4>监控模式</h4>
               </div>
               <div class="mode-desc">
@@ -835,7 +838,7 @@
             <!-- 2. 管控模式（核心卡片可微强调） -->
             <div class="mode-card" style="background: linear-gradient(145deg, #ffffff, #fbfdff);">
               <div class="card-header">
-                <span class="emoji-badge"><i class="fa-solid fa-chess-knight"></i></span>
+                <span class="emoji-badge"><i class="fa-solid fa-sliders"></i></span>
                 <h4>管控模式</h4>
               </div>
               <div class="mode-desc">
@@ -849,7 +852,7 @@
             <!-- 3. 无密钥模式 -->
             <div class="mode-card">
               <div class="card-header">
-                <span class="emoji-badge"><i class="fa-solid fa-chess-knight"></i></span>
+                <span class="emoji-badge"><i class="fa-solid fa-fingerprint"></i></span>
                 <h4>无密钥模式</h4>
               </div>
               <div class="mode-desc">
@@ -863,7 +866,7 @@
             <!-- 4. 边车模式 -->
             <div class="mode-card">
               <div class="card-header">
-                <span class="emoji-badge"><i class="fa-solid fa-chess-knight"></i></span>
+                <span class="emoji-badge"><i class="fa-solid fa-box"></i></span>
                 <h4>边车模式</h4>
               </div>
               <div class="mode-desc">
@@ -877,7 +880,7 @@
             <!-- 5. 透明网关模式 -->
             <div class="mode-card">
               <div class="card-header">
-                <span class="emoji-badge"><i class="fa-solid fa-chess-knight"></i></span>
+                <span class="emoji-badge"><i class="fa-solid fa-network-wired"></i></span>
                 <h4>透明网关模式</h4>
               </div>
               <div class="mode-desc">
